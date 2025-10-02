@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Siberian Winess — Натуральная энергия с севера</title>
+  <style>
+    :root{--bg:#f7faf9;--card:#ffffff;--accent:#1f6f3a;--muted:#6b7280}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, Roboto, "Helvetica Neue", Arial, sans-serif;background:var(--bg);color:#0f172a}
+    header{background:linear-gradient(90deg,#ecfdf5,#f0fdf4);padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:48px;height:48px;border-radius:10px;background:linear-gradient(180deg,#8be2a0,#1f6f3a);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    nav a{margin:0 10px;color:var(--muted);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;padding:48px 24px;align-items:center}
+    .hero h1{font-size:36px;margin:0 0 12px}
+    .hero p{margin:0 0 18px;color:var(--muted);line-height:1.6}
+    .cta{display:inline-block;padding:12px 18px;border-radius:10px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none}
+    .card{background:var(--card);border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;padding:24px}
+    .prod{padding:12px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfffc);display:flex;flex-direction:column;gap:10px}
+    .prod .img{height:140px;border-radius:10px;background:linear-gradient(135deg,#e6f8ea,#f3fff5);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);overflow:hidden}
+    .prod .img img{max-height:100%;max-width:100%;border-radius:8px;object-fit:cover}
+    .prod h3{margin:0;font-size:16px}
+    .prod p{margin:0;color:var(--muted);font-size:14px}
+    .price{font-weight:800}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding:24px}
+    footer{padding:18px 24px;color:var(--muted);font-size:14px;border-top:1px solid #eef2e8;background:#fff}
+    .disclaimer{background:#fff3f2;border-left:4px solid #ffb4a2;padding:12px;margin:18px;border-radius:8px;color:#7a2a1f}
+    @media(max-width:880px){.hero{grid-template-columns:1fr;padding:24px}.hero h1{font-size:28px}.grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">W</div>
+      <div>
+        <div style="font-weight:800">Siberian <span style="color:var(--accent)">Winess</span></div>
+        <div style="font-size:12px;color:var(--muted);margin-top:2px">Натуральная энергия с севера — выдуманный бренд</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#products">Продукция</a>
+      <a href="#about">О нас</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Природная сила сибирских трав</h1>
+      <p>Siberian Winess — вымышленная линия натуральной косметики и БАДов, вдохновлённая северной флорой. Изготовлено с вниманием к качеству и экологии.</p>
+      <a class="cta" href="#products">Посмотреть продукты</a>
+
+      <div class="disclaimer">
+        <strong>Внимание:</strong> Этот сайт является художественной/пародийной демонстрацией и <strong>не</strong> связан с реальной компанией Siberian Wellness. Любые совпадения — случайны.
+      </div>
+
+      <div style="margin-top:18px" class="card">
+        <h3>Популярное</h3>
+        <p style="color:var(--muted)">Натуральные масла, бальзамы и чаи — все в экологичной упаковке.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Подбор по типу кожи</h3>
+      <p style="color:var(--muted)">Ответьте на короткие вопросы и получите персональные рекомендации.</p>
+      <div style="margin-top:12px;display:flex;gap:8px">
+        <button style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6f3ea;background:#fff">Увлажнение</button>
+        <button style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6f3ea;background:#fff">Питание</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2 style="padding:0 24px">Наша продукция</h2>
+    <div class="products">
+      <div class="prod card">
+        <div class="img">
+          <img src="images/siberian-oil.png" alt="Сибирское восстанавливающее масло">
+        </div>
+        <h3>Сибирское восстанавливающее масло</h3>
+        <p>Комбинация масел кедра и шиповника для питания кожи.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">599 ₽</div>
+          <button style="padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700">Купить</button>
+        </div>
+      </div>
+
+      <div class="prod card">
+        <div class="img">Бальзам</div>
+        <h3>Защитный бальзам для рук</h3>
+        <p>Питает и защищает при холодном климате.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">349 ₽</div>
+          <button style="padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700">Купить</button>
+        </div>
+      </div>
+
+      <div class="prod card">
+        <div class="img">Чай</div>
+        <h3>Сбор «Северный вечер» — чай</h3>
+        <p>Ароматный травяной сбор для расслабления перед сном.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">249 ₽</div>
+          <button style="padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700">Купить</button>
+        </div>
+      </div>
+
+      <div class="prod card">
+        <div class="img">Саше</div>
+        <h3>Аромасаше «Лес»</h3>
+        <p>Натуральный аромат для дома — кедр и хвоя.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
+          <div class="price">199 ₽</div>
+          <button style="padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700">Купить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="grid-2">
+    <div class="card">
+      <h3>О бренде</h3>
+      <p style="color:var(--muted)">Siberian Winess — вымышленный проект, созданный для демонстрации дизайна. Вдохновлён северными растениями и традициями их использования. Этот текст — пример контента для лендинга.</p>
+    </div>
+    <div class="card">
+      <h3>Доставка и оплата</h3>
+      <p style="color:var(--muted)">Демонстрационный раздел. В реальном интернет-магазине здесь указываются сроки доставки, способы оплаты и гарантии.</p>
+    </div>
+  </section>
+
+  <section id="contact" style="padding:24px">
+    <div class="card" style="max-width:900px;margin:0 auto">
+      <h3>Контакты</h3>
+      <p style="color:var(--muted)">Это демонстрационный контактный блок. Не отправляйте реальные личные данные через этот пример.</p>
+      <form>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <input placeholder="Ваше имя" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6f3ea">
+          <input placeholder="Email" style="flex:1;padding:10px;border-radius:8px;border:1px solid #e6f3ea">
+        </div>
+        <textarea placeholder="Сообщение" style="width:100%;margin-top:12px;padding:10px;border-radius:8px;border:1px solid #e6f3ea;min-height:100px"></textarea>
+        <div style="text-align:right;margin-top:10px"><button style="padding:10px 14px;border-radius:8px;border:none;background:var(--accent);color:#fff;font-weight:700">Отправить</button></div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© Siberian Winess — вымышленный бренд. Все права не подразумеваются.</div>
+      <div style="color:var(--muted)">Политика конфиденциальности • Условия использования</div>
+    </div>
+  </footer>
+</body>
+</html>
